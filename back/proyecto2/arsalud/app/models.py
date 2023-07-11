@@ -154,7 +154,13 @@ class Direccion(models.Model):
         verbose_name_plural = ('Detalles de Direcciones')
 
     def __str__(self):
-        return self.calle, self.numero, self.departamento, self.piso
+        return f' CALLE {self.calle} \
+            numero {self.numero} \
+            piso {self.piso}\
+            departamento {self.departamento}\
+            barrio {self.barrio}\
+            '
+    
     
 class Estado(models.Model):
     class Estados(models.TextChoices):
@@ -177,7 +183,7 @@ class Estado(models.Model):
            return self.id_estado
     
         def __str__(self):
-           return self.get_estado_display()
+           return f' Estado {self.get_estado_display()}'
         
 class Envio(models.Model):
     id_envio=models.AutoField(primary_key=True)
