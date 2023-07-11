@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "corsheaders",
+    "django_rest_passwordreset",
     "rest_framework",
     "rest_framework.authentication",
     "django.contrib.admin",
@@ -40,8 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "app",
-    'django_rest_passwordreset',
-    'corsheaders',
+
     'rest_auth',
 ]
 
@@ -85,7 +86,7 @@ WSGI_APPLICATION = 'arsalud.wsgi.application'
 DATABASES = {
     'default': {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "farmacia_beta",
+        "NAME": "arsalud_farmacia",
         "USER": "root",
         "PASSWORD": "1234",
         "HOST": "localhost",

@@ -31,7 +31,7 @@ class CarritoAdmin(admin.ModelAdmin):
     list_display = ('id_carrito', 'fecha_creacion')
 
 class ElementosCarritoAdmin(admin.ModelAdmin):
-    list_display = ('id_elementos_carrito', 'id_carrito', 'id_libro', \
+    list_display = ('id_elementos_carrito', 'id_carrito', 'id_articulo', \
                     'cantidad')
     
 class ArticuloAdmin(admin.ModelAdmin):
@@ -40,10 +40,10 @@ class ArticuloAdmin(admin.ModelAdmin):
                     'img_url')
 
 class CategoriaAdmin(admin.ModelAdmin):
-    list_display = ('id_categoria', 'nombre','detalle')
+    list_display = ('nombre','detalle')
 
 class DetallePedidoAdmin(admin.ModelAdmin):
-    list_display = ('id_detalle', 'cantidad', 'id_pedido', \
+    list_display = ('cantidad', 'id_pedido', \
                     'id_articulo')
     
 class PedidoAdmin(admin.ModelAdmin):
@@ -59,7 +59,7 @@ class EstadoAdmin(admin.ModelAdmin):
     list_display = ('id_estado', 'detalle')
 
 class ModoPagoAdmin(admin.ModelAdmin):
-    list_display = ('id_mp', 'tipo', 'fecha', 'monto', \
+    list_display = ('id_mp', 'tipos', 'fecha', 'monto', \
                     'detalle')
 
 

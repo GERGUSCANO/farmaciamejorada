@@ -125,7 +125,7 @@ class Direccion(models.Model):
     calle= models.CharField(
         max_length=100,
         help_text='Calle')
-    numero= models.IntegerField(
+    numero= models.CharField(
         max_length=100, 
         help_text='Numero')
     departamento= models.CharField(
@@ -156,7 +156,7 @@ class Direccion(models.Model):
     def __str__(self):
         return self.calle, self.numero, self.departamento, self.piso
     
-class Estado(models.model):
+class Estado(models.Model):
     class Estados(models.TextChoices):
         activo='1',
         desactivo='2',
@@ -242,7 +242,7 @@ class ModoPago(models.Model):
         pagoeletronico= models.CharField(choices=Electronico.choices, default=Electronico.mercadopago)
 
     id_mp=models.AutoField(primary_key=True)
-    tipos=models.CharField(choices=tiposPago.choices, default=tiposPago.efectivo)
+    tipos=models.CharField(choices=tiposPago.choices, default=tiposPago.efectivo, max_length=100)
     detalle=models.TextField(max_length=200, help_text='Detalle', blank=True)
     fecha=models.DateField()
     monto=models.DecimalField(
@@ -332,7 +332,11 @@ class Carrito(models.Model):
 
 
 class Categoria(models.Model):
-    id_categoria: models.AutoField(primary_key=True)
+    id_categoria: models.AutoField(
+        primary_key=True,
+        unique=True,
+        db_index=True
+        ) 
     nombre=models.CharField(max_length=100, help_text="Nombre del la categoria", blank=False)
     detalle=models.TextField(max_length=200, blank=True)
 
@@ -343,7 +347,7 @@ class Articulo(models.Model):
         unique=True,
         db_index=True
         )
-    categoria=models.ForeignKey(Categoria, to_field="id_categoria", on_delete=models.CASCADE)
+    categoria=models.ForeignKey(Categoria, to_field='id', on_delete=models.CASCADE)
     nombre = models.CharField(
         max_length=200,
         help_text='Maximo 200 caracteres'
