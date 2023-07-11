@@ -197,7 +197,7 @@ class Envio(models.Model):
         verbose_name_plural = ('Envios')
 
     def __str__(self):
-        return self.id_envio, self.estado, self.fecha
+        return f'ENVIO{self.id_envio} , ESTADO {self.estado}, FECHA{self.fecha}, TOTAL{self.total}'
 
 """class TipoUsuarios(models.Model):
     class Tipos(models.TextChoices):
