@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cinzel&display=swap');
+/*font-family: 'Cinzel', serif;*/
+footer{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 100%;
+    gap: 40px;
+    background-color: #003366;
+    padding: 3%;
+    
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 10px #ed914b;
+    border: 1px solid #fa8730;
+    border-radius: 10px;
+    align-items: center;
+    width: 250px;
+}
+
+.h4{
+    font-family: 'Cinzel', serif;
+    color: #F5F5F8;
+    text-align: center;
+} 
+#link{
+    font-family: 'Cinzel', serif;
+    text-decoration: none;
+    color: #ffffff;
+    padding: auto;
+}
+#link:hover{
+    color: #66CC99;
+}

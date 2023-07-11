@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+
+/*font-family: 'Castoro Titling', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Licorice', cursive;*/
+
+.a{
+    font-family: 'Licorice', cursive;
+    font-size: 4rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-top: 1.5%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+    background-color: #003366;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+}
+.navbar{
+    width: 700px;
+    background-color: #003366;
+}
+
+.search{
+    width: 600px;
+    
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+ 
+}
+.btn{
+    border-color: #333333;
+    color: #333333;
+    background-color: #ffffff;
+    font-family: 'Cinzel', serif;
+}
+
+.nav-end{
+    margin-left: 70px;
+ 
+}
+
+.link{
+    margin-left: 40px;
+    text-decoration: none;
+    color: #66CC99;
+
+}

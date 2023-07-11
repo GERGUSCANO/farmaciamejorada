@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+
+/*font-family: 'Castoro Titling', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Licorice', cursive;*/
+
+/*Carousel*/
+.carousel{
+    margin-top: 3vh;
+    margin-bottom: 50px;
+}
+.img-carousel{
+    width: 100%;
+    padding-top: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+/*modificamos las card*/
+.all-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    margin: 5rem;
+    width: 90%;
+}
+.card-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.524);
+    border-radius: 30px;
+    padding-bottom: 20px;
+}
+
+.card-producto:hover{
+    scale: 1.2;
+    transition: all ease-in-out 0.5s;
+    background-color: #878787;
+    color: #F5F5F5;
+}
+.img-producto{
+    width: 200px;
+   
+}
+
+h1 {
+    text-align: center;
+}
+
+
+#carrusel-caja {
+    -moz-animation: automatizacion 15s infinite linear;
+    -o-animation: automatizacion 15s infinite linear;
+    -webkit-animation: automatizacion 15s infinite linear;
+    animation: automatizacion 15s infinite linear;
+
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+
+    height: 80vh;
+    width: 300%;
+}
+
+#carrusel-contenido {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+}
+
+.imagenes{
+    height: 80vh;
+    width: 100%;
+}
+
+.carrusel-elemento {
+    float: left;
+    width: 33.333%;
+}
+
+
+.menu{
+    background-color: #F5F5F5;
+    box-shadow: 1px 3px 10px #333333;
+}
+.title-menu{
+    font-family: 'Licorice', cursive;
+    font-size: 2rem;
+    margin-left: 30px;
+}
+.offcanvas-header{
+    margin-top: 35%;
+}
+
+.contenedor-card-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.menu-card{
+    width: 20%;
+    padding-left: 40px;
+    padding-top: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.h3{
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: 'Cinzel', serif;
+    text-align: justify;
+}
+.lista{
+    list-style: none;
+    font-family: 'Cinzel', serif;
+    width: 250px;
+    margin-bottom: 100px;
+}
+.a-link-menu{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    align-items: center;
+    padding-bottom: 30px;
+    
+}
+.a-link-menu:hover{
+    color:  #66CC99;
+}
+
+
+@-moz-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
